@@ -1,0 +1,15 @@
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.AssemblyInfoInputs.cache
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.AssemblyInfo.cs
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.csproj.CoreCompileInputs.cache
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.sourcelink.json
+C:\Workspace Code Academy\Model-Service-Controller\Practice\bin\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.exe
+C:\Workspace Code Academy\Model-Service-Controller\Practice\bin\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.deps.json
+C:\Workspace Code Academy\Model-Service-Controller\Practice\bin\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.runtimeconfig.json
+C:\Workspace Code Academy\Model-Service-Controller\Practice\bin\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.dll
+C:\Workspace Code Academy\Model-Service-Controller\Practice\bin\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.pdb
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.dll
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\refint\Encapsulation-Polymorphism-Abstraction.dll
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.pdb
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\Encapsulation-Polymorphism-Abstraction.genruntimeconfig.cache
+C:\Workspace Code Academy\Model-Service-Controller\Practice\obj\Debug\net6.0\ref\Encapsulation-Polymorphism-Abstraction.dll

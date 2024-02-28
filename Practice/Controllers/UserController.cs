@@ -1,31 +1,58 @@
 ﻿
-using Practice.Services;
+using Encapsulation_Polymorphism_Abstraction.Helpers.Constants;
+using Encapsulation_Polymorphism_Abstraction.Services;
 
-namespace Practice.Controllers
+namespace Encapsulation_Polymorphism_Abstraction.Controllers
 {
     internal class UserController
     {
-        private readonly UserService userService;
+        private readonly UserService _userService;
 
         public UserController()
         {
-            userService = new UserService();
+            _userService = new UserService();
         }
 
         public void GetAll()
         {
-            var users = userService.GetAll();
+            var users = _userService.GetAll();
             foreach (var user in users)
             {
-                Console.WriteLine($"Id: {user.id} Fullname: {user.fullName} Age: {user.age}");
+                string result = $"{user.fullName} - {user.age} - {user.email}";
+                Console.WriteLine(result);
             }
         }
 
-        public void GetById(int id)
+        public void GetById()
         {
-            var user = userService.GetById(userService.GetAll(), id);
+            Console.WriteLine("Enter user id:");
+        UserId: string strId = Console.ReadLine();
 
-            Console.WriteLine(user != null ? $"Id: {user.id} Fullname: {user.fullName} Age: {user.age}" : "User does not exist");
+            int id;
+
+            bool isCorrectId = int.TryParse(strId, out id);
+
+            if (isCorrectId)
+            {
+                var user = _userService.GetById(_userService.GetAll(), id);
+
+                if (user == null)
+                {
+                    Console.WriteLine(ResponseMessages.Notfound);
+                    return;
+                }
+
+                string result = $"{user.fullName} - {user.age} - {user.email}";
+                Console.WriteLine(result);
+            }
+            else
+            {
+                Console.WriteLine(ResponseMessages.IncorrectNumberFormat);
+                goto UserId;
+            }
+
+
+
         }
     }
 }

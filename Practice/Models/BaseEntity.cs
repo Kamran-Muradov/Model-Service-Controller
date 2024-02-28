@@ -1,7 +1,7 @@
 ﻿
-namespace Practice.Models
+namespace Encapsulation_Polymorphism_Abstraction.Models
 {
-    internal class BaseEntity
+    internal abstract class BaseEntity
     {
         public int id;
     }

@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Practice
-build_property.ProjectDir = C:\Users\kamranshmu\Desktop\alma\Practice\Practice\
+build_property.ProjectDir = C:\Workspace Code Academy\Model-Service-Controller\Practice\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

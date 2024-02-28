@@ -1,5 +1,5 @@
 ﻿
-namespace Practice.Models
+namespace Encapsulation_Polymorphism_Abstraction.Models
 {
     internal class User: BaseEntity
     {

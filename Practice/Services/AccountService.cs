@@ -1,27 +1,20 @@
 ﻿
-using Practice.Helpers;
-
-namespace Practice.Services
+namespace Encapsulation_Polymorphism_Abstraction.Services
 {
     internal class AccountService
     {
-        private readonly UserService userService;
+        private readonly UserService _userService;
 
         public AccountService()
         {
-            userService = new UserService();
+            _userService = new UserService();
         }
 
 
-        public string Login(string email, string password)
+        public bool Login(string email, string password)
         {
-            var users = userService.GetAll();
-
-            if (users.Any(m => m.email == email && m.password == password))
-            {
-                return LoginMessages.Success;
-            }
-            return LoginMessages.Error;
+            var users = _userService.GetAll();
+            return users.Any(m => m.email == email && m.password == password);
         }
     }
 }

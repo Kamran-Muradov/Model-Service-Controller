@@ -1,46 +1,39 @@
-﻿using Practice.Models;
+﻿using Encapsulation_Polymorphism_Abstraction.Models;
 
-namespace Practice.Services
+namespace Encapsulation_Polymorphism_Abstraction.Services
 {
     internal class UserService
     {
         public User[] GetAll()
         {
-            User user1 = new()
+            return new User[]
             {
+                new User
+                {
                 id = 1,
-                fullName = "Test Testov",
-                age = 23,
-                email = "test@gmail.com",
-                password = "test12223234"
-            };
-            User user2 = new()
-            {
+                fullName = "Fatime Qayxanova",
+                age = 22,
+                email = "fatime@code.edu.az",
+                password = "fatime123"
+                },
+                new User
+                {
                 id = 2,
-                fullName = "Test2 Testzade",
-                age = 30,
-                email = "testzade@gmail.com",
-                password = "12234556"
-            };
-            User user3 = new()
-            {
+                fullName = "Fexriyye Tagizade",
+                age = 21,
+                email = "fexriyye@code.edu.az",
+                password = "fexriyye123"
+                },
+                new User
+                {
                 id = 3,
-                fullName = "Test3 Testov3 ",
-                age = 27,
-                email = "kamran@gmail.com",
-                password = "123435test"
-            };
-            User user4 = new()
-            {
-                id = 4,
-                fullName = "Test4 Testzade4",
-                age = 49,
-                email = "test4@mail.ru",
-                password = "3434535testt4"
-            };
+                fullName = "Emirastan Miriyev",
+                age = 33,
+                email = "emirastan@code.edu.az",
+                password = "emirastan123"
+                }
 
-            User[] users = { user1, user2, user3, user4, };
-            return users;
+            };
         }
 
         public User GetById(User[] users, int id)

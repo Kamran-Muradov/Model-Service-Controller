@@ -1,26 +1,42 @@
 ﻿
-using Practice.Services;
+using Encapsulation_Polymorphism_Abstraction.Helpers.Constants;
+using Encapsulation_Polymorphism_Abstraction.Services;
 
-namespace Practice.Controllers
+namespace Encapsulation_Polymorphism_Abstraction.Controllers
 {
     internal class AccountController
     {
-        private readonly AccountService accountService;
+        private readonly AccountService _accountService;
 
         public AccountController()
         {
-            accountService = new AccountService();
+            _accountService = new AccountService();
         }
 
         public void Login()
         {
-            Console.WriteLine("Enter email:");
-            string email = Console.ReadLine();
+            Console.WriteLine("Add your email:");
+        Email: string email = Console.ReadLine();
 
-            Console.WriteLine("Enter password:");
+            if (!email.Contains("@"))
+            {
+                Console.WriteLine(ResponseMessages.IncorrectEmailFormat);
+                goto Email;
+            }
+
+            Console.WriteLine("Add your password:");
             string password = Console.ReadLine();
 
-            Console.WriteLine(accountService.Login(email, password));
+            var response = _accountService.Login(email, password);
+
+            if (response)
+            {
+                Console.WriteLine(ResponseMessages.LoginSuccess);
+            }
+            else
+            {
+                Console.WriteLine(ResponseMessages.LoginFailed);
+            }
         }
     }
 }
